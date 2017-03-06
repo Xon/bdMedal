@@ -34,8 +34,6 @@ class bdMedal_Listener
 
         if (isset($data['routesAdmin'])) {
             XenForo_CacheRebuilder_Abstract::$builders['bdMedal_User'] = 'bdMedal_CacheRebuilder_User';
-
-            bdMedal_ShippableHelper_Updater::onInitDependencies($dependencies);
         }
     }
 
